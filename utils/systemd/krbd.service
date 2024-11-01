@@ -1,0 +1,17 @@
+[Unit]
+Description=evilbit service
+After=network.target
+
+[Service]
+Type=oneshot
+User=evilbit
+Group=evilbit
+PermissionsStartOnly=true
+RemainAfterExit=yes
+ExecStartPre=-/bin/mkdir -p /var/run/evilbit
+ExecStartPre=/bin/chown -R evilbit:evilbit /var/run/evilbit/
+ExecStart=/usr/lib/evilbit/evilbitd.sh --start
+ExecStop=/usr/lib/evilbit/evildbitd.sh --stop
+
+[Install]
+WantedBy=multi-user.target
