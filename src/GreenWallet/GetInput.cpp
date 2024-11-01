@@ -8,6 +8,8 @@
 ///////////////////////////////
 
 #include <boost/algorithm/string.hpp>
+#include <chrono>
+#include <thread>
 
 #include "linenoise.hpp"
 
