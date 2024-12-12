@@ -28,6 +28,8 @@
 #include <unistd.h>
 #include "ErrorMessage.h"
 
+#include <pthread.h>
+
 namespace System {
 
 namespace {
