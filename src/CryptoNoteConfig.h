@@ -192,11 +192,13 @@ const uint32_t P2P_IP_FAILS_BEFORE_BLOCK                     = 10;
 const uint32_t P2P_IDLE_CONNECTION_KILL_INTERVAL             = (5 * 60);      //5 minutes
 
 const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "";
-
 const char* const SEED_NODES[] = { 
-  "212.47.254.201:6663",
-  "51.158.185.125:6663"
-  
+  "23.27.124.219:6663",
+  "23.27.53.27:6663",
+  "38.95.173.106:6663",
+  "23.27.51.244:6663",
+  "166.88.134.89:6663"
 };
+
 
 } // CryptoNote
